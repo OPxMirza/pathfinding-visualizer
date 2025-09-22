@@ -1,6 +1,4 @@
-Perfect 👌 here’s a clean **README.md** for your **Pathfinding Visualizer** project. You can just create a new file named `README.md` in your project root and paste this in.
 
-````markdown
 # 🧭 Pathfinding Visualizer
 
 A web-based tool to visualize popular **pathfinding algorithms** such as **BFS, DFS, Dijkstra, and A***.  
@@ -35,7 +33,7 @@ Built with **React + TailwindCSS**, it helps understand how these algorithms wor
    ```bash
    git clone https://github.com/OPxMirza/pathfinding-visualizer.git
    cd pathfinding-visualizer
-````
+
 
 2. Install dependencies:
 
@@ -66,11 +64,6 @@ Built with **React + TailwindCSS**, it helps understand how these algorithms wor
 
 ---
 
-## 📸 Demo Preview
-
-*(You can add screenshots or a short gif later once it runs)*
-
----
 
 ## 🌟 Future Enhancements
 
@@ -89,19 +82,4 @@ MIT License – free to use & modify.
 
 👨‍💻 Developed by [OPxMirza](https://github.com/OPxMirza)
 
-````
 
----
-
-👉 Next steps:  
-1. Save this as `README.md` in your project folder.  
-2. Run:
-   ```bash
-   git add README.md
-   git commit -m "Added README.md"
-   git push
-````
-
-and it’ll appear beautifully on your GitHub repo.
-
-Do you also want me to add **drag-and-drop start/end positions** before you finalize the first push, or keep it simple for now?
