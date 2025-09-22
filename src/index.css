@@ -1,0 +1,100 @@
+:root {
+  --node-size: 26px;
+  --node-gap: 2px;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 16px;
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+/* Layout */
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+.grid {
+  display: inline-block;
+  user-select: none;
+  background: #e6eef8;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+}
+
+.node {
+  width: var(--node-size);
+  height: var(--node-size);
+  margin: var(--node-gap);
+  border-radius: 4px;
+  background: white;
+  border: 1px solid #d6e2f0;
+  box-sizing: border-box;
+  transition: background 150ms ease;
+}
+
+/* Node states */
+.node.start {
+  background: #10b981; /* green */
+  box-shadow: 0 0 6px rgba(16,185,129,0.3);
+}
+.node.end {
+  background: #ef4444; /* red */
+  box-shadow: 0 0 6px rgba(239,68,68,0.25);
+}
+.node.wall {
+  background: #111827; /* dark */
+}
+.node.visited {
+  background: #60a5fa; /* blue-ish */
+}
+.node.path {
+  background: #f59e0b; /* amber */
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-primary { background: #2563eb; color: white; }
+.btn-green { background: #16a34a; color: white; }
+.btn-warning { background: #f59e0b; color: white; }
+.btn-danger { background: #ef4444; color: white; }
+.small { padding: 6px 8px; font-size: 13px; }
+
+/* footer */
+.footer {
+  margin-top: 14px;
+  color: #475569;
+  font-size: 13px;
+}
